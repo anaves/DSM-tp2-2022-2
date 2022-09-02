@@ -6,6 +6,19 @@ public class Conta {
         setNumero(numero);
         setLimite(1000);
     }
+
+    public boolean depositar(double valor){
+        setSaldo(valor);
+        return true;
+    }
+
+    public boolean sacar(double valor){
+        if (valor <= getSaldo()+getLimite()){
+            setSaldo(-valor);
+            return true;
+        }
+        return false;
+    }
     // comportamentos => metodos
     // tipo_retorno nome_metodo(parametros)
     public String info(){
@@ -25,8 +38,8 @@ public class Conta {
     public double getSaldo() {
         return saldo;
     }
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+    private void setSaldo(double saldo) {
+        this.saldo += saldo;
     }
    
     public String getDono() {
