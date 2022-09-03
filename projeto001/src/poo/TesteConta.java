@@ -16,7 +16,7 @@ public class TesteConta {
         objCP.depositar(5000);
         objCP.setDono("Magali");
         System.out.println(objCC.info());
-        JOptionPane.showMessageDialog(null, objCP.info());
+        //JOptionPane.showMessageDialog(null, objCP.info());
 
         objCV.setDono("Franjinha");
         System.out.println("-------- REFERENCIA -----------");
@@ -27,15 +27,30 @@ public class TesteConta {
         System.out.println("---Teste sacar CC - Cebolinha---");
         saque(objCC,2500);
         saque(objCC,500);
+        saque(objCC,1);
+      
+
+
+
+        System.out.println("---Teste sacar CC - Magali---");
+        saque(objCP,3800);
         //saque(objCC)
+
+
+
     }
 
     public static void saque(Conta conta, double valor){
+
       if(conta.sacar(valor)){
+        System.out.println("----------------------------");
         System.out.println("Saque realizado");
+        System.out.println("----------------------------");
       }else{
+        System.out.println("----------------------------");
         System.out.println("Saldo insuficiente realizado");
-        System.out.println("Valor solicitado R$ " + valor);
+        System.out.println("Valor NEGADO R$ " + valor);
+        System.out.println("----------------------------");
       }
       System.out.println(conta);
 
