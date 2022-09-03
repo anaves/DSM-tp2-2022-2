@@ -54,6 +54,14 @@ public class Conta {
     public void setLimite(double limite) {
         this.limite = limite;
     }
+
+    public boolean transferir(Conta destino, double valor){
+        if (this.sacar(valor)){
+            destino.depositar(valor);
+            return true;
+        }
+        return false;
+    }
     @Override
     public String toString() {
         return info();
