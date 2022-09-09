@@ -1,5 +1,7 @@
 package poo;
 
+import java.util.Date;
+
 public class Conta {
     public Conta(int numero){
         System.out.println("Criar objeto Conta");
@@ -72,5 +74,8 @@ public class Conta {
     private int numero;
     private double saldo;
     private String dono;
+    private String cpf;
+    private String endereco;
+    private Date dataNascimento;
     private double limite;
 }
