@@ -16,7 +16,7 @@ public class Endereco {
     public Endereco(String logradouro, String nome, String numero, String cep, String cidade, String uf,
             String bairro) {
         this.setLogradouro(logradouro);
-        this.setNome(nome)
+        this.setNome(nome);
         setNumero(numero);
         setCep(cep);
         this.setCidade(cidade);
