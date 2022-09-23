@@ -79,7 +79,11 @@ public class Endereco {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
- 
+    @Override
+    public String toString() {
+        return "{'bairro':'" + bairro + "','cep':'" + cep + "','cidade':'" + cidade + "','logradouro':'" + logradouro
+                + "','nome':'" + nome + "','numero':'" + numero + "','uf':'" + uf + "'}";
+    }
 
     
 

@@ -62,6 +62,9 @@ public class Documento {
         // posicao 10 para analisar dv2      
         return (calculaCPF(cpf, 9) && calculaCPF(cpf, 10));
     }
-}
 
- 
+    @Override
+    public String toString(){
+        return "{'CPF':'" + getCpf() + "','RG':'" + getRg() + "','CNH':'" + getCnh()+"'}"; 
+    }    
+}
