@@ -63,9 +63,4 @@ public class Documento {
         return (calculaCPF(cpf, 9) && calculaCPF(cpf, 10));
     }
 
-    public static void main(String[] args) {
-        Documento doc = new Documento("111.444.787-35");
-    }
-
-    
-}
+ 
