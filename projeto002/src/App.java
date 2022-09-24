@@ -12,13 +12,14 @@ public class App {
         Funcionario fun1 = new Funcionario();
         fun1.setNome("Severino");
        
-        info(fun1);
-        info(obj1);
+        System.out.println("---Funcionario---");
+        Util.info(fun1);
+
+        System.out.println("---Cliente---");
+        Util.info(obj1);
     }
     
-    public static void info(PessoaFisica pf){           
-        System.out.println("Nome " + pf.toString());
-    }
+   
 
   
 

@@ -12,9 +12,9 @@ public class Cliente extends PessoaFisica {
    public void setScoreCredito(int scoreCredito){
        this.scoreCredito = scoreCredito;
    }
-
+  
    public String toString(){
-       return "CLIENTE " + super.getNome();
+       return super.toString() + "\nScore: " + getScoreCredito();
    }
     
 }

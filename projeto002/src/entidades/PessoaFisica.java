@@ -43,5 +43,12 @@ public class PessoaFisica {
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+    public String toString(){
+        return "Nome: " + getNome() + "\nEndereco: " + getEndereco() +
+        "\nContato: " + getContato() +
+        "\nDocumento: " + getDocumento() +
+        "\nData de Nascimento: " + getDataNascimento();
+    }
     
 }

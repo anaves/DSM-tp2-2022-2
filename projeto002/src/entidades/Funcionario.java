@@ -22,7 +22,7 @@ public class Funcionario extends PessoaFisica {
     }
 
     public String toString(){
-        return "FUNCIONARIO: " + getNome();
+        return super.toString() + "\nMatricula: " + getMatricula() + "\nSalario: " + getSalario();
     }
     
 }
