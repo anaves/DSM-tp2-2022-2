@@ -9,6 +9,13 @@ public class PessoaFisica {
     private Contato contato;
     private LocalDate dataNascimento;
     
+    public PessoaFisica(String cpf){
+        setDocumento(new Documento(cpf));
+        setEndereco(new Endereco(null));
+        Contato contato = new Contato();
+        setContato(contato);
+    }
+
     public String getNome() {
         return nome;
     }
